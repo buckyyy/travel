@@ -1,0 +1,21 @@
+<style>
+body {
+	background: <%= @color %>;
+}
+</style>
+
+<h1>About Me</h1>
+<p>Lots of interesting stuff.</p>
+<p>My favorite color is <%= @color %></p>
+
+<%if @height >= 6 %>
+<p>you are <%= @height - 6.00 %> ft taller than me</p>
+<% else %>
+<p>you are <%= 6.00 - @height %> ft smaller than me </p>
+<%end%>
+
+<%if @height >= 6 %>
+<p> <%= @height%> ft! thats really tall </p>
+<% else %>
+<p> you are short, only <%= @height * 12 %> inches tall </p>
+<%end%>
