@@ -2,37 +2,14 @@
 <p>this is really really cool </p>
 
 <%= @homeland%>
+<p></p>
 
-<ul>
-<% @countries.each do |country| %>
-	<li><%= country %></li>
-<% end %>
-</ul>
-<%= image_tag "miami.jpg", alt:"ducks",
-							id: "Boston",
-							height: 100,
-							width: 300
- %>
- <%= image_tag "sanjose.jpg", alt:"ducks",
-							id: "Boston",
-							height: 100,
-							width: 300
- %>
- <%= image_tag "scotland.jpg", alt:"ducks",
-							id: "Boston",
-							height: 100,
-							width:300
- %>
- <%= image_tag "boston.jpg", alt:"ducks",
-							id: "Boston",
-							height: 100,
-							width: 300
- %>
 
- <% @images.each_with_index do |image, index| %>
- 	<%= image_tag image, alt: index,
- 						height: 100,
- 						width: 300
+ <% @images.sample 1 do |image, index| %>
+ 	<%= image_tag image,  width: 500,
+ 						height:100,
+ 						class: "img-responsive",		
+ 						alt: index
  						 %>
 
 <% end %>

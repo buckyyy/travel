@@ -1,0 +1,15 @@
+<style>
+body {
+	color: <%= @font_color %>;
+}
+</style>
+
+<h1>Contact Me</h1>
+
+<%= link_to "red", contact_path(font_color: "red"), class:"btn btn-danger" %>
+<%= link_to "white", contact_path(font_color: "white"), class:"btn btn-default" %>
+<%= link_to "blue", contact_path(font_color: "blue"), class:"btn btn-primary" %>
+
+<p>hit me up bro</p>
+
+<%= gets.chomp %>

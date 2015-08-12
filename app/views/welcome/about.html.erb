@@ -5,8 +5,12 @@ body {
 </style>
 
 <h1>About Me</h1>
+<%= link_to "red", about_path(color: "red"), class:"btn btn-danger" %>
+<%= link_to "white", about_path(color: "white"), class:"btn btn-default" %>
+<%= link_to "Blue", about_path(color: "blue"), class:"btn btn-primary" %>
+<p></p>
 <p>Lots of interesting stuff.</p>
-<p>My favorite color is <%= @color %></p>
+<p>You chose: <%= @color %></p>
 
 <%if @height >= 6 %>
 <p>you are <%= @height - 6.00 %> ft taller than me</p>

@@ -9,6 +9,12 @@ class WelcomeController < ApplicationController
   	@color = params[:color]
   	@height = params[:size].to_f
   end
+  def contact
+  	@font_color = params[:font_color]
+  	
+  end
+
 end
+
 
 
