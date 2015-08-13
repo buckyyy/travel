@@ -5,11 +5,7 @@
 <p></p>
 
 
- <% @images.sample 1 do |image, index| %>
- 	<%= image_tag image,  width: 500,
- 						height:100,
- 						class: "img-responsive",		
- 						alt: index
- 						 %>
+ <%= image_tag @images.sample %>
 
-<% end %>
+
+
